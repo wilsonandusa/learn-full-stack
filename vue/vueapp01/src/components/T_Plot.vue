@@ -1,6 +1,6 @@
 <template>
   <div>
-    I am {{name}}  <button v-on:click="changeName">change</button>
+    I am {{apple}}  <button v-on:click="changeName">change</button>
     </div>
 </template>
 
@@ -9,13 +9,14 @@
 export default{
   name: 'wilson',
   data: function(){
-    return {
-      name: 'wilson'
-    }
+      return{
+        apple: "a",
+        name: 'wilson'}
+
   },
   methods: {
     changeName:function(){
-      this.name = 'xiaoshengwu';
+      this.apple = 'xiaoshengwu';
     }
   }
 }
